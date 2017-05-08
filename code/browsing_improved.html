@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel = "stylesheet" href = "improved.css">
+    <!--<link href=[Google Fonts] rel='stylesheet' type='text/css'>-->
+    <!--<script src="js/helper.js"></script>-->
+</head>
+<body>
+    <!--<script src="js/file.js"></script>-->
+<header>
+  <div class="header_wrapper">
+    <div class="content" id="content">
+      	<div id="logo">            
+        	<a class="ContentAreaESpotInfoImgLink" id="ContentAreaESpotInfoImgLink_95342_1" href="http://www.intertoys.nl"><img src="logo.png" alt="LoGo"></a>
+      	</div>     
+
+		<div id="searchComponent">
+			<form name="CatalogSearchForm" action="http://www.intertoys.nl/SearchDisplay" method="get" id="CatalogSearchForm" onsubmit="setCurrentSearchTerm()">
+			  
+			  <!-- Search Widget -->
+			  	<div class="widget_search_position" role="search">
+			    	<div id="widget_search">
+			      		<div class="content">
+			      			<label for="SimpleSearchForm_SearchTerm" class="nodisplay">Zoeken </label>
+			       	 		<input type="text" class="search_input gray_color" placeholder="Zoeken " name="searchTerm" id="SimpleSearchForm_SearchTerm" autocomplete="off" maxlength="65" tabindex="0" title="Zoek hier op merk, product of trefwoord." value="">
+			        		<script>
+					          function searchCatalog(){
+					            if(jQuery("#SimpleSearchForm_SearchTerm").val() === ""){
+					               console.log('Input can not be left blank');
+					               jQuery("#widget_search").addClass("noSearchVal");
+					            } else{
+					              document.getElementById('currentSearchTerm').value = document.getElementById('SimpleSearchForm_SearchTerm').value;jQuery('#CatalogSearchForm').submit()
+					            }
+					          }
+					          
+					          function setCurrentSearchTerm() {
+					            if (document.getElementById('previousSearchTerm') && "" != "") {
+					              document.getElementById('previousSearchTerm').value = "";
+					            }
+					            document.getElementById('currentSearchTerm').value = jQuery("#SimpleSearchForm_SearchTerm").val();
+					          }
+					        </script>
+			        		<a id="search_submit" class="button_action" wairole="button" role="button" title="Zoeken" onclick="searchCatalog()">
+				          		<div id="ListViewQuickViewButton_" class="button_text">
+				            		Zoeken
+				          		</div>
+			        		</a>  
+
+			        		<input id="search_categoryId" type="hidden" name="categoryId" value="">
+			       
+			      		</div> <!-- content -->
+			    	</div> <!-- widget_search -->
+			  	</div> <!-- widget_search_position --><!-- Start SearchDropdownWidget -->
+
+			  	<input type="hidden" name="storeId" value="10153">
+			  	<input type="hidden" name="catalogId" value="12551">
+			  	<input type="hidden" name="langId" value="-104">
+			  	<input type="hidden" name="pageSize" value="12">
+			  	<input type="hidden" name="beginIndex" value="0">
+			  	<input type="hidden" name="sType" value="SimpleSearch">
+			  	<input type="hidden" name="resultCatEntryType" value="2">
+			  	<input type="hidden" name="showResultsPage" value="true">
+			  	<input type="hidden" name="searchSource" value="Q">
+			  	<input type="hidden" name="pageView" value="">
+			  	<input type="hidden" name="currentSearchTerm" id="currentSearchTerm" value="">
+			  <!-- <span id="searchTextHolder" class="nodisplay">Zoeken </span> -->
+			</form><!-- End Search Widget --><!-- END Search.jsp -->            
+		</div>
+         
+
+	</div>
+
+</div>
+
+    <!-- BEGIN Department.jsp -->
+<div id="navigation">
+  <ul id="categorymenu" class="megamenu">
+        <li class="mm-item">
+            <a id="productbrowser_cat_1_link" categorylink="http://www.intertoys.nl/lego" href="#" class="productbrowser_tab productbrowser_mytab_1 productbrowser-tab-first mm-item-link">
+                <span class="productbrowser-button">
+                  <span class="productbrowser-button-inlay">
+                    Lego
+                  </span>
+                </span>
+              </a>           
+        </li>
+ 
+        <li class="mm-item">
+          <a id="productbrowser_cat_2_link" categorylink="http://www.intertoys.nl/playmobil" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_2 mm-item-link">
+                <span class="productbrowser-button">
+                  <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                    Playmobil
+                  </span>
+                </span>
+              </a>           
+        </li>
+ 
+        <li class="mm-item">
+          <a id="productbrowser_cat_3_link" categorylink="http://www.intertoys.nl/baby-peuter-speelgoed" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_3 mm-item-link">
+                <span class="productbrowser-button">
+                  <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                    Baby &amp; Peuter
+                  </span>
+                </span>
+              </a>            
+        </li>
+        
+        <li class="mm-item">
+          <a id="productbrowser_cat_4_link" categorylink="http://www.intertoys.nl/buitenspeelgoed" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_4 mm-item-link">
+                <span class="productbrowser-button">
+                  <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                    Buiten- speelgoed
+                  </span>
+                </span>
+              </a>            
+        </li>
+        
+        <li class="mm-item">
+          <a id="productbrowser_cat_5_link" categorylink="http://www.intertoys.nl/schoolspullen" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_5 mm-item-link">
+                <span class="productbrowser-button">
+                  <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                    School &amp; Boeken
+                  </span>
+                </span>
+              </a>           
+        </li>
+       
+        <li class="mm-item">
+          <a id="productbrowser_cat_6_link" categorylink="http://www.intertoys.nl/spellen" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_6 mm-item-link">
+                <span class="productbrowser-button">
+                  <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                    Spellen &amp; Puzzels
+                  </span>
+                </span>
+              </a>
+        </li>
+        
+        <li class="mm-item">
+          <a id="productbrowser_cat_7_link" categorylink="http://www.intertoys.nl/speelgoed" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_7 mm-item-link">
+                <span class="productbrowser-button">
+                  <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                    Speelgoed
+                  </span>
+                </span>
+              </a>
+        </li>
+       
+        <li class="mm-item">
+          <a id="productbrowser_cat_8_link" categorylink="http://www.intertoys.nl/gifts-en-bijoux" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_8 mm-item-link">
+                <span class="productbrowser-button">
+                  <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                    Gifts &amp; Bijoux
+                  </span>
+                </span>
+              </a>           
+        </li>
+        
+        <li class="mm-item">
+          <a id="productbrowser_cat_9_link" categorylink="http://www.intertoys.nl/games" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_9 mm-item-link">
+                <span class="productbrowser-button">
+                  <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                    Games
+                  </span>
+                </span>
+              </a>      
+        </li>
+      
+        <li class="mm-item">
+          <a id="productbrowser_cat_10_link" categorylink="http://www.intertoys.nl/merk" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_10 mm-item-link">
+                <span class="productbrowser-button">
+                  <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                    MERKEN
+                  </span>
+                </span>
+              </a>           
+        </li>   
+  
+        <li class="mm-item">
+          <a id="productbrowser_cat_11_link" categorylink="http://www.intertoys.nl/uit-de-folder" href="#" style="overflow: hidden; width: 98px; max-width: 98px;" class="productbrowser_tab productbrowser_mytab_11 productbrowser-tab-last mm-item-link">
+                <span class="productbrowser-button">
+                  <span class="productbrowser-button-inlay" style="width: 98px; max-width: 98px;">
+                    Uit de folder
+                  </span>
+                </span>
+            </a>
+         </li>
+    </ul>
+</div>
+
+</div>
+
+</header>
+
+<div class="main">
+	<script type="text/javascript">
+	    window.topCategoryId = '146143';
+	    window.topCategoryName='Buitenspeelgoed';
+	</script>      
+	<div id="widget_breadcrumb">
+		<ul>    
+			<li><a href="http://www.intertoys.nl/home/">Home</a></li>
+			<span class="divider"> > </span>
+			<li class="current"><a href="http://www.intertoys.nl/home/buitenspeelgoed">Buitenspeelgoed</a></li>
+		</ul>
+	</div>
+
+	<div class="browsing-title">
+    	<img src="browsing_title_1.png" alt="Hoverboards">
+  	</div>
+
+  	<div id="categories-box">
+  		<div class="category">
+  			<img class="category-img" src="http://placekitten.com/g/200/200" alt="category image">
+  			<p class="category-title">Category Title</p>
+  		</div>
+
+  		<div class="category">
+  			<img class="category-img" src="http://placekitten.com/g/200/200" alt="category image">
+  			<p class="category-title">Category Title</p>
+  		</div>
+
+  		<div class="category">
+  			<img class="category-img" src="http://placekitten.com/g/200/200" alt="category image">
+  			<p class="category-title">Category Title</p>
+  		</div>
+  	</div><!--End Categories Box-->
+
+</div><!--End Main-->
+
+</body>

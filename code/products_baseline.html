@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel = "stylesheet" href = "main.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+
+  <!--<link href=[Google Fonts] rel='stylesheet' type='text/css'>-->
+  <!--<script src="js/helper.js"></script>-->
+</head>
+<body>
+    <!--<script src="js/file.js"></script>-->
+<header>
+  <div class="header_wrapper">
+    <div id="masthead">
+      <div class="top">           
+      <!-- Masthead Links Widget -->
+        <div class="widget_masthead_links_position" role="navigation">
+          <div id="widget_masthead_links">
+            <p id="top-tag">Het beste speelgoed van Nederland vind je hier!</p>
+          </div>
+        </div>
+        <!-- End Masthead Links Widget -->
+      </div>
+      <div class="content" id="content">
+        <div id="logo">            
+          <a class="ContentAreaESpotInfoImgLink" id="ContentAreaESpotInfoImgLink_95342_1" href="http://www.intertoys.nl"><img src="logo.png" alt="LoGo"></a>
+        </div> 
+
+  <div id="searchComponent">
+    <form name="CatalogSearchForm" action="http://www.intertoys.nl/SearchDisplay" method="get" id="CatalogSearchForm" onsubmit="setCurrentSearchTerm()">
+      
+      <!-- Search Widget -->
+      <div class="widget_search_position" role="search">
+        <div id="widget_search">
+          <div class="content">
+            <label for="SimpleSearchForm_SearchTerm" class="nodisplay">Zoeken </label>
+            <input type="text" class="search_input gray_color" placeholder="Zoeken " name="searchTerm" id="SimpleSearchForm_SearchTerm" autocomplete="off" maxlength="65" tabindex="0" title="Zoek hier op merk, product of trefwoord." value="">
+            <script>
+              function searchCatalog(){
+                if(jQuery("#SimpleSearchForm_SearchTerm").val() === ""){
+                   console.log('Input can not be left blank');
+                   jQuery("#widget_search").addClass("noSearchVal");
+                } else{
+                  document.getElementById('currentSearchTerm').value = document.getElementById('SimpleSearchForm_SearchTerm').value;jQuery('#CatalogSearchForm').submit()
+                }
+              }
+              
+              function setCurrentSearchTerm() {
+                if (document.getElementById('previousSearchTerm') && "" != "") {
+                  document.getElementById('previousSearchTerm').value = "";
+                }
+                document.getElementById('currentSearchTerm').value = jQuery("#SimpleSearchForm_SearchTerm").val();
+              }
+            </script>
+            <a id="search_submit" class="button_action" wairole="button" role="button" title="Zoeken" onclick="searchCatalog()">
+              <div id="ListViewQuickViewButton_" class="button_text">
+                Zoeken
+              </div>
+            </a>  
+            <input id="search_categoryId" type="hidden" name="categoryId" value="">
+          </div> <!-- content -->
+        </div> <!-- widget_search -->
+      </div> <!-- widget_search_position --><!-- Start SearchDropdownWidget -->
+
+      <input type="hidden" name="storeId" value="10153">
+      <input type="hidden" name="catalogId" value="12551">
+      <input type="hidden" name="langId" value="-104">
+      <input type="hidden" name="pageSize" value="12">
+      <input type="hidden" name="beginIndex" value="0">
+      <input type="hidden" name="sType" value="SimpleSearch">
+      <input type="hidden" name="resultCatEntryType" value="2">
+      <input type="hidden" name="showResultsPage" value="true">
+      <input type="hidden" name="searchSource" value="Q">
+      <input type="hidden" name="pageView" value="">
+      
+      <input type="hidden" name="currentSearchTerm" id="currentSearchTerm" value="">
+      <!-- <span id="searchTextHolder" class="nodisplay">Zoeken </span> -->
+    </form>
+  </div>
+
+
+<!-- MiniShopCart Widget -->
+<div class="widget_minishopcart_position" id="shopcart">
+  <img id="cart-img" src="cart.png">
+</div>
+
+
+  </div>
+
+    <!-- BEGIN Department.jsp -->
+  <div id="navigation">
+    <ul id="categorymenu" class="megamenu">
+          <li class="mm-item">
+              <a id="productbrowser_cat_1_link" categorylink="http://www.intertoys.nl/lego" href="#" class="productbrowser_tab productbrowser_mytab_1 productbrowser-tab-first mm-item-link">
+                  <span class="productbrowser-button">
+                    <span class="productbrowser-button-inlay">
+                      Lego
+                    </span>
+                  </span>
+                </a>           
+          </li>
+   
+          <li class="mm-item">
+            <a id="productbrowser_cat_2_link" categorylink="http://www.intertoys.nl/playmobil" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_2 mm-item-link">
+                  <span class="productbrowser-button">
+                    <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                      Playmobil
+                    </span>
+                  </span>
+                </a>           
+          </li>
+   
+          <li class="mm-item">
+            <a id="productbrowser_cat_3_link" categorylink="http://www.intertoys.nl/baby-peuter-speelgoed" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_3 mm-item-link">
+                  <span class="productbrowser-button">
+                    <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                      Baby &amp; Peuter
+                    </span>
+                  </span>
+                </a>            
+          </li>
+          
+          <li class="mm-item">
+            <a id="productbrowser_cat_4_link" categorylink="http://www.intertoys.nl/buitenspeelgoed" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_4 mm-item-link">
+                  <span class="productbrowser-button">
+                    <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                      Buiten- speelgoed
+                    </span>
+                  </span>
+                </a>            
+          </li>
+          
+          <li class="mm-item">
+            <a id="productbrowser_cat_5_link" categorylink="http://www.intertoys.nl/schoolspullen" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_5 mm-item-link">
+                  <span class="productbrowser-button">
+                    <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                      School &amp; Boeken
+                    </span>
+                  </span>
+                </a>           
+          </li>
+         
+          <li class="mm-item">
+            <a id="productbrowser_cat_6_link" categorylink="http://www.intertoys.nl/spellen" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_6 mm-item-link">
+                  <span class="productbrowser-button">
+                    <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                      Spellen &amp; Puzzels
+                    </span>
+                  </span>
+                </a>
+          </li>
+          
+          <li class="mm-item">
+            <a id="productbrowser_cat_7_link" categorylink="http://www.intertoys.nl/speelgoed" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_7 mm-item-link">
+                  <span class="productbrowser-button">
+                    <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                      Speelgoed
+                    </span>
+                  </span>
+                </a>
+          </li>
+         
+          <li class="mm-item">
+            <a id="productbrowser_cat_8_link" categorylink="http://www.intertoys.nl/gifts-en-bijoux" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_8 mm-item-link">
+                  <span class="productbrowser-button">
+                    <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                      Gifts &amp; Bijoux
+                    </span>
+                  </span>
+                </a>           
+          </li>
+          
+          <li class="mm-item">
+            <a id="productbrowser_cat_9_link" categorylink="http://www.intertoys.nl/games" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_9 mm-item-link">
+                  <span class="productbrowser-button">
+                    <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                      Games
+                    </span>
+                  </span>
+                </a>      
+          </li>
+        
+          <li class="mm-item">
+            <a id="productbrowser_cat_10_link" categorylink="http://www.intertoys.nl/merk" href="#" style="overflow: hidden; width: 88px; max-width: 88px;" class="productbrowser_tab productbrowser_mytab_10 mm-item-link">
+                  <span class="productbrowser-button">
+                    <span class="productbrowser-button-inlay" style="width: 88px; max-width: 88px;">
+                      MERKEN
+                    </span>
+                  </span>
+                </a>           
+          </li>   
+    
+          <li class="mm-item">
+            <a id="productbrowser_cat_11_link" categorylink="http://www.intertoys.nl/uit-de-folder" href="#" style="overflow: hidden; width: 98px; max-width: 98px;" class="productbrowser_tab productbrowser_mytab_11 productbrowser-tab-last mm-item-link">
+                  <span class="productbrowser-button">
+                    <span class="productbrowser-button-inlay" style="width: 98px; max-width: 98px;">
+                      Uit de folder
+                    </span>
+                  </span>
+                </a>
+              </li>
+      </ul>
+  </div>
+
+  </div>
+
+  <div id="menu-text-info">    
+    <img id="menu-text-info-img" src="text_info_1.png" alt="Textual marketing info">
+  </div>
+</header>
+
+<div class="main">
+
+  <script type="text/javascript">
+    window.topCategoryId = '146143';
+    window.topCategoryName='Buitenspeelgoed';
+  </script>      
+  <div id="widget_breadcrumb">
+    <ul>    
+      <li><a href="http://www.intertoys.nl/home/">Home</a></li>
+      <span class="divider"> > </span>
+      <li class="current"><a href="http://www.intertoys.nl/buitenspeelgoed">Buitenspeelgoed</a></li>
+      <span class="divider"> > </span>
+      <li class="current"><a href="http://www.intertoys.nl/buitenspeelgoed/waterpistool">Waterpistool</a></li>
+    </ul>
+  </div>
+
+  <div class="right-column">
+    <h3>Filter op:</h3>
+
+    <script type="text/javascript">
+      function toggle (id, id2){
+         var element = document.getElementById(id);
+         if( 'none' == element.style.display ){
+             element.style.display = 'block';
+  
+         }else{
+             element.style.display = 'none';
+  
+         }
+         
+         var element2 = document.getElementById(id2);
+         if( 'none' == element2.style.display ){
+             element2.style.display = 'block';
+  
+         }else{
+             element2.style.display = 'none';
+  
+         }
+         return false;
+      }
+    </script>
+    
+    <form id="productsFacets">
+    <input type="hidden" id="sliderMaxPossiblePrice" value="25.0">
+    <fieldset>
+      <div id="section_0" class="content_section content_section_priceslider">
+        <a onclick="SearchBasedNavigationDisplayJS.toggleExpand(-1); return false;" href="#">
+        <div class="header">
+          <span id="expand_icon_-1" class="expand_icon_open"></span>
+          <span class="header_title left filter-title">Maximale prijs</span>
+        </div>
+        </a>
+        <div id="section_list_-1" class="section_list">
+          <script>
+          function updateInput(val) {
+              document.getElementById("sliderMaxDisplay").innerHTML = "€" + val;
+          }
+          </script>
+          <input type="range" id="myRange" min="0" max="100" value="25"  onchange="updateInput(this.value);">
+          <div class="range-output">
+            <div id="sliderMinDisplayLabel" style="">Min</div>
+            <div id="sliderMaxDisplayLabel" style="">Max</div>
+            <div id="sliderMinDisplay" class="sliderValue">€0</div>
+            <div id="sliderMaxDisplay" class="sliderValue">€25</div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend class="spanacce">Kleur</legend>     
+        <div class="content_section" id="section_5">
+        <a href="#" onclick="SearchBasedNavigationDisplayJS.toggleExpand(5); return false;">
+          <div class="header">
+            <span id="expand_icon_5" class="expand_icon_open"></span>
+            <span class="header_title left filter-title">Kleur</span>
+          </div>
+        </a>
+        <div id="section_list_5" class="section_list">
+          <ul>
+            <li id="facet_30744573456167026696610897117119" class="">                      
+              <span class="outline">
+                <span class="facet_value" id="facetLabel_30744573456167026696610897117119"><input type="checkbox"> Blauw</span>
+              </span>
+            </li>                
+            <li id="facet_307445734561670266971101101108" class="">                      
+              <span class="outline">
+                <span class="facet_value" id="facetLabel_307445734561670266971101101108"><input type="checkbox"> Geel</span>
+              </span>
+            </li>                 
+            <li id="facet_307445734561670266971114111101110" class="">                      
+              <span class="outline">
+                <span class="facet_value" id="facetLabel_307445734561670266971114111101110"><input type="checkbox"> Groen</span>
+              </span>
+            </li>                            
+            <li id="facet_3074457345616702669809797114115" class="">
+              <span class="outline">
+                <span class="facet_value" id="facetLabel_3074457345616702669809797114115"><input type="checkbox"> Paars</span>
+              </span>
+            </li>                           
+            <li id="facet_307445734561670266982111111100" class="">
+              <span class="outline">
+                <span class="facet_value" id="facetLabel_307445734561670266982111111100"><input type="checkbox"> Rood</span>
+              </span>
+            </li>   
+            <li id="facet_307445734561670266987105116" class="">             
+              <span class="outline">
+                <span class="facet_value" id="facetLabel_307445734561670266987105116"><input type="checkbox"> Wit</span>
+              </span>
+            </li>                
+            <li id="facet_30744573456167026699011997114116" class="">
+              <span class="outline">
+                <span class="facet_value" id="facetLabel_30744573456167026699011997114116"><input type="checkbox"> Zwart</span>
+              </span>                       
+            </li>                 
+          </ul>
+        </div>
+      </div>        
+    </fieldset>
+
+    </form>
+  </div>
+
+  <div class="left-column">
+
+    <div class="category-title-box">
+      <h1>Waterpistool</h1>
+      <img src="waterpistool_title.png" alt="Waterpistool">
+      <div class="description">
+        blablabla
+      </div>
+    </div>
+
+    <div class="header_bar_1">                   
+      <div class="paging_controls">
+        <div class="num_products">
+          Getoonde artikelen: 1 - 10 van 10
+        </div>        
+      </div>
+    </div>
+
+    <div class="header_bar_2">
+      <div class="paging_amount_controls">
+        <div class="paging_controls">
+          <span><label for="changeItemsPerPage"></label>Toon per: </span>
+          <select id="changeItemsPerPage" name="changeItemsPerPage" onchange="javascript:changeToSize(this.value)">
+            <option value="12" selected="selected">12</option>
+            <option value="24">24</option>
+            <option value="48">48</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sorting_controls">
+        <span><label for="orderBy">Sorteer op:</label></span>
+        <select title="Gebruik de pijltjestoetsen om te bladeren door de sorteer mogelijkheden." id="orderBy" name="orderBy" onchange="javaScript:setCurrentId('orderBy');SearchBasedNavigationDisplayJS.sortResults(this.value)">
+          <option value="">Best verkocht</option>                                       
+          <option value="3">Prijs laag - hoog</option>
+          <option value="4">Prijs hoog - laag</option>                                   
+        </select>
+      </div>  
+    </div>
+
+    <div id="products-box">
+
+      <div id="product_1" class="product product_margin_right">
+        <div class="product_info">
+          <div class="product-img-box">
+            <img class="product-img" src="http://placekitten.com/g/100/200" alt="product image">
+          </div>
+          <div class="product_price" id="product_price_281875">   
+            <!-- BEGIN PriceDisplay.jsp --><!-- if we have m2 show the m2 price -->
+            <span class="old_price_label" id="old_price_label" style="display: none"></span> 
+            <span id="discount_info_label" style="display: none">KORTING</span>
+            <span id="listPrice_281875" class="old_price"></span>
+            <span id="offerPrice_281875" class="price int_price"><span class="product_price_integer">12.</span><span class="product_price_fraction">99<span class="double_asterix"></span></span></span>
+            <!-- END PriceDisplay.jsp -->
+          </div>
+          <div class="product_name dotdotdot">    
+            <a id="CatalogEntryViewDetailsLink_281875" href="http://www.intertoys.nl/buitenspeelgoed/waterpistool/watergeweer-bottle-shot" onclick="return callProductClickUA('281875')" oncontextmenu="return callProductClickUA('281875')"> 
+              Watergeweer Bottle Shot
+            </a>
+          </div>  
+          <div class="article_num">
+            vanaf 6 tot 9 jaar&nbsp;|&nbsp;1007543
+          </div>    
+          <div class="product_description">
+            <p class="product_shortdescription dotdotdot" id="product_shortdescription_281875">Met deze Nerf Super Soaker Bottle Shot win jij alle watergevechten!</p>
+            <div class="product_moreinfo">
+              <a id="catalogEntry_img281875" href="http://www.intertoys.nl/buitenspeelgoed/waterpistool/watergeweer-bottle-shot" onclick="return callProductClickUA('281875')" oncontextmenu="return callProductClickUA('281875')">
+                Meer informatie</a>
+            </div>
+          </div>    
+        </div>
+
+        <div class="product_quantity_addtolist">
+          <div class="product_quantity left">
+            <div class="quantity_section" style="display: none;">
+              <label for="quantity_281875" class="header">Aantal: </label>
+                <input id="quantity_281875" type="text" class="quantity_input" value="1"> 
+              <div class="clear_float"></div>
+            </div>
+          </div>
+          <div class="clear_float"></div>
+        </div>
+        
+        <form onsubmit="addToCart()">
+          <input class="in-cart" type="submit" value="In winkelwagen">
+        </form>
+                    
+        <div id="catalog_store_text_display_id" class="nodisplay">
+          <span class="masthead_links_item">Of ga naar&nbsp;<a href="http://www.intertoys.nl/AjaxStoreLocatorDisplayView?catalogId=12551&amp;top_category=146143&amp;parent_category_rn=146143&amp;fromPage=ProductDetails&amp;categoryId=146146&amp;langId=-104&amp;type=product&amp;productId=&amp;storeId=10153"><u>een winkel in de buurt </u></a> </span>
+        </div>
+      </div> 
+
+      <div id="product_2" class="product product_margin_right">
+        <div class="product_info">
+          <div class="product-img-box">
+            <img class="product-img" src="http://placekitten.com/g/200/300" alt="product image">
+          </div>
+          <div class="product_price" id="product_price_281875">   
+            <!-- BEGIN PriceDisplay.jsp --><!-- if we have m2 show the m2 price -->
+            <span class="old_price_label" id="old_price_label" style="display: none"></span> 
+            <span id="discount_info_label" style="display: none">KORTING</span>
+            <span id="listPrice_281875" class="old_price"></span>
+            <span id="offerPrice_281875" class="price int_price"><span class="product_price_integer">4.</span><span class="product_price_fraction">99<span class="double_asterix"></span></span></span>
+            <!-- END PriceDisplay.jsp -->
+          </div>
+          <div class="product_name dotdotdot">    
+            <a id="CatalogEntryViewDetailsLink_281875" href="http://www.intertoys.nl/buitenspeelgoed/waterpistool/watergeweer-bottle-shot" onclick="return callProductClickUA('281875')" oncontextmenu="return callProductClickUA('281875')"> 
+              Ciber Strike Slime Control Recharge
+            </a>
+          </div>  
+          <div class="article_num">
+            vanaf 6 tot 9 jaar&nbsp;|&nbsp;1007543
+          </div>    
+          <div class="product_description">
+            <p class="product_shortdescription dotdotdot" id="product_shortdescription_281875">Met de Slime Recharge kun je nog langer met je Slime Control X-Stream-blaster van Cyber Strike schieten!</p>
+            <div class="product_moreinfo">
+              <a id="catalogEntry_img281875" href="http://www.intertoys.nl/buitenspeelgoed/waterpistool/watergeweer-bottle-shot" onclick="return callProductClickUA('281875')" oncontextmenu="return callProductClickUA('281875')">
+                Meer informatie</a>
+            </div>
+          </div>    
+        </div>
+
+        <div class="product_quantity_addtolist">
+          <div class="product_quantity left">
+            <div class="quantity_section" style="display: none;">
+              <label for="quantity_281875" class="header">Aantal: </label>
+                <input id="quantity_281875" type="text" class="quantity_input" value="1"> 
+              <div class="clear_float"></div>
+            </div>
+          </div>
+          <div class="clear_float"></div>
+        </div>
+        
+        <form onsubmit="addToCart()">
+          <input class="in-cart" type="submit" value="In winkelwagen">
+        </form>
+                    
+        <div id="catalog_store_text_display_id" class="nodisplay">
+          <span class="masthead_links_item">Of ga naar&nbsp;<a href="http://www.intertoys.nl/AjaxStoreLocatorDisplayView?catalogId=12551&amp;top_category=146143&amp;parent_category_rn=146143&amp;fromPage=ProductDetails&amp;categoryId=146146&amp;langId=-104&amp;type=product&amp;productId=&amp;storeId=10153"><u>een winkel in de buurt </u></a> </span>
+        </div>
+      </div> 
+
+      <div id="product_3" class="product product_margin_right">
+        <div class="product_info">
+          <div class="product-img-box">
+            <img class="product-img" src="http://placekitten.com/g/200/300" alt="product image">
+          </div>
+          <div class="product_price" id="product_price_281875">   
+            <!-- BEGIN PriceDisplay.jsp --><!-- if we have m2 show the m2 price -->
+            <span class="old_price_label" id="old_price_label" style="display: none"></span> 
+            <span id="discount_info_label" style="display: none">KORTING</span>
+            <span id="listPrice_281875" class="old_price"></span>
+            <span id="offerPrice_281875" class="price int_price"><span class="product_price_integer">6.</span><span class="product_price_fraction">99<span class="double_asterix"></span></span></span>
+            <!-- END PriceDisplay.jsp -->
+          </div>
+          <div class="product_name dotdotdot">    
+            <a id="CatalogEntryViewDetailsLink_281875" href="http://www.intertoys.nl/buitenspeelgoed/waterpistool/watergeweer-bottle-shot" onclick="return callProductClickUA('281875')" oncontextmenu="return callProductClickUA('281875')"> 
+              Waterpistool 48 cm
+            </a>
+          </div>  
+          <div class="article_num">
+            vanaf 6 tot 9 jaar&nbsp;|&nbsp;1007543
+          </div>    
+          <div class="product_description">
+            <p class="product_shortdescription dotdotdot" id="product_shortdescription_281875">Ga het watergevecht aan met dit waterpistool!</p>
+            <div class="product_moreinfo">
+              <a id="catalogEntry_img281875" href="http://www.intertoys.nl/buitenspeelgoed/waterpistool/watergeweer-bottle-shot" onclick="return callProductClickUA('281875')" oncontextmenu="return callProductClickUA('281875')">
+                Meer informatie</a>
+            </div>
+          </div>    
+        </div>
+
+        <div class="product_quantity_addtolist">
+          <div class="product_quantity left">
+            <div class="quantity_section" style="display: none;">
+              <label for="quantity_281875" class="header">Aantal: </label>
+                <input id="quantity_281875" type="text" class="quantity_input" value="1"> 
+              <div class="clear_float"></div>
+            </div>
+          </div>
+          <div class="clear_float"></div>
+        </div>
+        
+        <form onsubmit="addToCart()">
+          <input class="in-cart" type="submit" value="In winkelwagen">
+        </form>
+                    
+        <div id="catalog_store_text_display_id" class="nodisplay">
+          <span class="masthead_links_item">Of ga naar&nbsp;<a href="http://www.intertoys.nl/AjaxStoreLocatorDisplayView?catalogId=12551&amp;top_category=146143&amp;parent_category_rn=146143&amp;fromPage=ProductDetails&amp;categoryId=146146&amp;langId=-104&amp;type=product&amp;productId=&amp;storeId=10153"><u>een winkel in de buurt </u></a> </span>
+        </div>
+      </div>    
+
+    </div>
+
+  </div>
+
+</div>
+  
+  <div class="messagepop pop">
+    <p>Je hebt het speelgoed gevonden! Ga nu verder met het volgende speelgoed.</p>
+    <p><input class="close button_primary" type="submit" value="Ga verder"></p>
+  </div>
+  <script src="cart.js"></script>
+
+</body>
+</html>
